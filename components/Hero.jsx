@@ -40,7 +40,7 @@ const Hero = () => {
             alt=""
             width={333}
             height={400}
-            className=" rounded-md object-cover"
+            className=" rounded-md object-cover mx-auto"
           />
           <SocialLinks />
         </div>

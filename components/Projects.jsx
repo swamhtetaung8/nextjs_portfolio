@@ -68,7 +68,7 @@ const Projects = () => {
               className=" relative  md:h-[260px] h-[180px] block ">
               <Image
                 src={`/assets/images/${project.img}`}
-                className=" object-contain object-top"
+                className=" md:object-contain object-cover  object-top"
                 alt={project.img}
                 fill
               />
