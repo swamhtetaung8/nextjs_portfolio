@@ -18,7 +18,7 @@ const About = () => {
       type: "Internship",
       company: "Brycen Myanmar",
       image: "brycen.jpg",
-      duration: "2023 May - Present",
+      duration: "2023 May - 2023 July",
     },
     {
       id: 3,
