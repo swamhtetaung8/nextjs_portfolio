@@ -58,8 +58,8 @@ const About = () => {
         </h1>
         <div className="space-y-10 ">
           <p className="text-lg font-medium leading-8 text-gray-700">
-            Hello! I&apos;m Swam Htet Aung, but you can call me Shinji. I&apos;m
-            a web developer from Myanmar and I love making websites that are
+            Hello! I&apos;m Swam Htet Aung, but you can call me Swam. I&apos;m a
+            web developer from Myanmar and I love making websites that are
             user-friendly and innovative.
           </p>
           <p className="text-lg font-medium leading-8 text-gray-700">

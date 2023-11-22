@@ -15,13 +15,11 @@ const Hero = () => {
             </span>
           </h1>
           <p className="max-w-xl leading-8 text-black/70">
-            I studied Computer Science for three years, specializing in software
-            engineering and web development. With over three years of experience
-            as a Japanese lecturer, I honed my communication and teaching
-            skills. Now, I am pursuing full-stack web development and have
-            immersed myself in staying up-to-date with the latest technologies
-            while simultaneously contributing to the development of impactful
-            applications that benefit our society and environment.
+            Passionate Web Developer with proficiency in a wide array of
+            frontend and backend technologies. Able to effectively self manage
+            during independent-projects, as well as collaborate in a team
+            setting. Also committed to delivering high-quality software
+            solutions that enhance user experiences and drive business success.
           </p>
           <a
             download={true}

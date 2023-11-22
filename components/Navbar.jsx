@@ -31,31 +31,31 @@ const Navbar = () => {
   ];
   const [opened, { open, close }] = useDisclosure(false);
   return (
-    <nav className="h-20 flex items-center justify-between relative z-50 ">
+    <nav className="relative z-50 flex items-center justify-between h-20 ">
       <Link href="/">
-        <h1 className=" signature text-3xl cursor-pointer bg-clip-text text-transparent bg-gradient-to-r from-sky-500 to-blue-500">
-          Shinji
+        <h1 className="text-3xl text-transparent cursor-pointer  signature bg-clip-text bg-gradient-to-r from-sky-500 to-blue-500">
+          Swam
         </h1>
       </Link>
-      <ul className=" hidden md:flex gap-10">
+      <ul className="hidden gap-10  md:flex">
         {menu.map((item) => (
           <Link href={`${item.link == "home" ? "/" : item.link}`} key={item.id}>
-            <li className="  hover:text-sky-400 transition-all cursor-pointer capitalize active:scale-105 duration-100">
+            <li className="capitalize transition-all duration-100 cursor-pointer  hover:text-sky-400 active:scale-105">
               {item.link}
             </li>
           </Link>
         ))}
       </ul>
-      <div className="md:hidden cursor-pointer z-10" onClick={open}>
+      <div className="z-10 cursor-pointer md:hidden" onClick={open}>
         <GiHamburgerMenu size={30} />
       </div>
       <Modal opened={opened} padding={"xl"} onClose={close} title="Menu">
         <ul
           className={` bg-white rounded-lg py-5 flex flex-col gap-12 justify-center transition-all duration-500`}>
           {menu.map((item) => (
-            <div key={item.id} className=" flex items-center justify-between">
+            <div key={item.id} className="flex items-center justify-between ">
               <FaChevronRight color="gray" />
-              <li className=" text-end cursor-pointer capitalize active:scale-105 duration-100">
+              <li className="capitalize duration-100 cursor-pointer  text-end active:scale-105">
                 <Link
                   href={`${item.link == "home" ? "/" : item.link}`}
                   onClick={close}>
