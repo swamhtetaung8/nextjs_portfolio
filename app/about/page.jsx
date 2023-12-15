@@ -48,8 +48,8 @@ const About = () => {
         />
         <div className="space-y-5 text-sm font-medium text-center text-gray-900 capitalize md:text-end md:text-lg md:space-y-10">
           <h1>web developer</h1>
-          <h1>sport enthusiast</h1>
-          <h1>gaming enthusiast</h1>
+          <h1>book worm</h1>
+          <h1>travel enthusiast</h1>
         </div>
       </div>
       <div className="mb-20 ">
@@ -63,16 +63,16 @@ const About = () => {
             user-friendly and innovative.
           </p>
           <p className="text-lg font-medium leading-8 text-gray-700">
-            When I&apos;m not coding, I enjoy watching sports and playing games.
-            These hobbies have given me a broad perspective that I bring to all
-            my work.
+            When I&apos;m not coding, I reading books both fictions and
+            non-fictions and also playing chill games. These hobbies have given
+            me a broad perspective that I bring to all my work.
           </p>
           <p className="text-lg font-medium leading-8 text-gray-700">
             I got into web development in 2017 when I started learning HTML and
             CSS in university. Since then, I&apos;ve learned a lot of different
-            technologies like Bootstrap, Tailwind, JavaScript, React, PHP and
-            more. Right now, I&apos;m working on becoming an expert in NextJs
-            and Laravel.
+            technologies like React, Laravel, Angular and more. Right now,
+            I&apos;m working on becoming an expert in both frontend and backend
+            as a whole.
           </p>
           <p className="text-lg font-medium leading-8 text-gray-700">
             I believe that every step, no matter how small, is important on the
