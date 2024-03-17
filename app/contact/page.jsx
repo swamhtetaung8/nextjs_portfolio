@@ -71,7 +71,7 @@ const Contact = () => {
           />
         </svg>
       ),
-      contact: "Yangon, Myanmar",
+      contact: "Ubon Rachathani, Thailand",
       title: "Home",
     },
   ];
@@ -162,19 +162,19 @@ const Contact = () => {
   return (
     <section className="pt-10">
       <div className="max-w-xl space-y-3">
-        <p className="text-4xl text-gray-900 font-bold capitalize border-b-4 mb-10 border-sky-500 inline-block pb-3">
+        <p className="inline-block pb-3 mb-10 text-4xl font-bold text-gray-900 capitalize border-b-4 border-sky-500">
           Contact
         </p>
         <p>You can contact me via these.</p>
       </div>
       <div>
-        <ul className="mt-12 flex flex-wrap md:flex-nowrap gap-x-12 gap-y-12 justify-between items-center lg:gap-x-20">
+        <ul className="flex flex-wrap items-center justify-between mt-12 md:flex-nowrap gap-x-12 gap-y-12 lg:gap-x-20">
           {contactMethods.map((item) => (
             <li key={item.title}>
-              <h4 className="text-gray-800 text-lg font-medium">
+              <h4 className="text-lg font-medium text-gray-800">
                 {item.title}
               </h4>
-              <div className="mt-3 flex items-center gap-x-3">
+              <div className="flex items-center mt-3 gap-x-3">
                 <div className="flex-none text-gray-400">{item.icon}</div>
                 <p>{item.contact}</p>
               </div>
@@ -182,17 +182,17 @@ const Contact = () => {
           ))}
         </ul>
       </div>
-      <div className=" mt-20">
-        <p className="text-3xl text-gray-900 font-bold capitalize border-b-4 mb-10 border-sky-500 inline-block pb-3">
+      <div className="mt-20 ">
+        <p className="inline-block pb-3 mb-10 text-3xl font-bold text-gray-900 capitalize border-b-4 border-sky-500">
           My Socials
         </p>
-        <div className="flex gap-5 flex-wrap justify-between">
+        <div className="flex flex-wrap justify-between gap-5">
           {socialDetails.map((social) => (
             <a
               href={social.href}
               key={social.id}
               target="_blank"
-              className=" flex gap-5 text-gray-500 group hover:text-black"
+              className="flex gap-5 text-gray-500 group hover:text-black"
               rel="noreferrer">
               <span>{social.child}</span>
               <p className=" group-hover:underline">{social.name}</p>
@@ -200,7 +200,7 @@ const Contact = () => {
           ))}
         </div>
       </div>
-      <div className=" flex my-20 justify-between flex-col gap-10 md:flex-row md:gap-0">
+      <div className="flex flex-col justify-between gap-10 my-20 md:flex-row md:gap-0">
         <Image
           src="/assets/images/contact.svg"
           width={300}

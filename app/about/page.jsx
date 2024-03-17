@@ -6,14 +6,22 @@ const About = () => {
   const works = [
     {
       id: 1,
+      position: "Full Stack Developer",
+      type: "Remote",
+      company: "Befeni Limited",
+      image: "befeni.png",
+      duration: "2024 February - Present",
+    },
+    {
+      id: 2,
       position: "Junior Web Developer",
       type: "Full Time",
       company: "Brycen Myanmar",
       image: "brycen.jpg",
-      duration: "2023 August - Present",
+      duration: "2023 August - 2024 January",
     },
     {
-      id: 2,
+      id: 3,
       position: "Web Developer",
       type: "Internship",
       company: "Brycen Myanmar",
@@ -21,7 +29,7 @@ const About = () => {
       duration: "2023 May - 2023 July",
     },
     {
-      id: 3,
+      id: 4,
       position: "Japanese Lecturer",
       type: "Full Time",
       company: "KBTC School of Information Technology",
@@ -29,7 +37,7 @@ const About = () => {
       duration: "2022 July - 2022 November",
     },
     {
-      id: 4,
+      id: 5,
       position: "Japanese Lecturer",
       type: "Freelance",
       company: "Myself",
