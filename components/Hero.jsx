@@ -11,15 +11,11 @@ const Hero = () => {
             I am Swam Htet Aung
             <br />
             <span className="pb-3 my-3 text-lg text-gray-900 border-b-4 border-sky-500">
-              Web Developer
+              Full Stack Developer
             </span>
           </h1>
-          <p className="max-w-xl leading-8 text-black/70">
-            Passionate Web Developer with proficiency in a wide array of
-            frontend and backend technologies. Able to effectively self manage
-            during independent-projects, as well as collaborate in a team
-            setting. Also committed to delivering high-quality software
-            solutions that enhance user experiences and drive business success.
+          <p className="max-w-xl leading-8 text-black/70">     
+            A web developer fluent in various frontend and backend technologies. Skilled in managing solo projects and collaborating effectively in team settings. Dedicated to providing superior software solutions that enhance user interactions and foster business expansion
           </p>
           <a
             download={true}
