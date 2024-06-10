@@ -53,6 +53,7 @@ const About = () => {
           width="600"
           height="500"
           alt="an-svg"
+          quality={100}
         />
         <div className="space-y-5 text-sm font-medium text-center text-gray-900 capitalize md:text-end md:text-lg md:space-y-10">
           <h1>web developer</h1>
