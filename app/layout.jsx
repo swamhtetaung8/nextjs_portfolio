@@ -17,8 +17,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${poppins.className} md:px-40 bg-[#f1f1f1]`}>
-        <main className=" bg-white shadow  md:px-20 px-5 md:pt-5 min-h-screen">
+      <body className={`${poppins.className} md:px-40`}>
+        <main className="min-h-screen px-5 md:px-20 md:pt-5">
           <Navbar />
           {children}
           <Footer />

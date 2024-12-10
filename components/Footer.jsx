@@ -18,19 +18,15 @@ const menu = [
     id: 4,
     link: "contact",
   },
-  {
-    id: 5,
-    link: "blogs",
-  },
 ];
 const Footer = () => {
   return (
-    <div className="mt-10 py-10 border-t items-center justify-between sm:flex">
+    <div className="items-center justify-between py-10 mt-10 border-t sm:flex">
       <ul className="flex flex-wrap items-center gap-4 mb-6 sm:text-sm sm:mt-0">
         {menu.map((item) => (
           <li
             key={item.id}
-            className="text-gray-800 duration-150 capitalize hover:text-sky-500">
+            className="text-gray-800 capitalize duration-150 hover:text-sky-500">
             <Link href={`${item.link == "home" ? "/" : item.link}`}>
               {item.link}
             </Link>

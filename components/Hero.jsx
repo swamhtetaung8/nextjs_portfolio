@@ -15,7 +15,7 @@ const Hero = () => {
             </span>
           </h1>
           <p className="max-w-xl leading-8 text-black/70">     
-            A web developer fluent in various frontend and backend technologies. Skilled in managing solo projects and collaborating effectively in team settings. Dedicated to providing superior software solutions that enhance user interactions and foster business expansion
+            From concept to code, I create websites that are not only visually stunning but also highly functional and user-friendly.
           </p>
           <a
             download={true}

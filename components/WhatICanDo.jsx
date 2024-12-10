@@ -6,26 +6,20 @@ const WhatICanDo = () => {
     {
       id: 1,
       title: "Frontend Web Design",
-      details:
-        "I have experience in building exceptional client-side applications that incorporate modern features like Single-Page Applications (SPA) and semantic coding styles that adhere to best practices for Search Engine Optimization (SEO) optimization. Using React, NextJs, Angular, TailwindCSS, and TypeScript, I can create immersive and user-friendly applications that provide a seamless user experience.",
+      details: "I have experience building client-side applications with modern features like Single-Page Applications (SPA) and SEO-friendly coding practices. Using React, Next.js, TailwindCSS, and TypeScript, I create user-friendly, high-performance apps.",
       techs: [
         "react.svg",
         "nextjs.svg",
         "tailwind.svg",
-        "angular.png",
         "typescript.svg",
-        "js.png",
-        "bootstrap.png",
-        "html.png",
-        "css.png",
+        "js.png"
       ],
     },
     {
       id: 2,
       title: "Backend Web Development and Web Applications",
-      details:
-        "I possess the expertise to design and construct robust, scalable server applications that are capable of seamlessly handling increased traffic and user loads. My proficiency with cutting-edge technologies such as PHP, Laravel, Java and MySQL allows me to implement efficient and optimized solutions that can be easily maintained over time.",
-      techs: ["laravel.svg", "php.png", "java.png", "mysql.svg"],
+      details: "I’m a backend enthusiast who loves building strong, scalable server applications that manipulate a bunch of data and user loads with ease. With my skills in PHP, Laravel, Node.js, MySQL, and MongoDB.",
+      techs: ["laravel.svg", "php.png", "nodejs.svg", "mysql.svg", "mongodb.svg"],
     },
   ];
   return (

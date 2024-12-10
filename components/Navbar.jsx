@@ -23,24 +23,20 @@ const Navbar = () => {
     {
       id: 4,
       link: "contact",
-    },
-    {
-      id: 5,
-      link: "blogs",
-    },
+    }
   ];
   const [opened, { open, close }] = useDisclosure(false);
   return (
     <nav className="relative z-50 flex items-center justify-between h-20 ">
       <Link href="/">
-        <h1 className="text-3xl text-transparent cursor-pointer  signature bg-clip-text bg-gradient-to-r from-sky-500 to-blue-500">
+        <h1 className="text-3xl text-transparent cursor-pointer signature bg-clip-text bg-gradient-to-r from-sky-500 to-blue-500">
           Swam
         </h1>
       </Link>
-      <ul className="hidden gap-10  md:flex">
+      <ul className="items-center hidden gap-10 md:flex">
         {menu.map((item) => (
           <Link href={`${item.link == "home" ? "/" : item.link}`} key={item.id}>
-            <li className="capitalize transition-all duration-100 cursor-pointer  hover:text-sky-400 active:scale-105">
+            <li className="capitalize transition-all duration-100 cursor-pointer hover:text-sky-400 active:scale-105">
               {item.link}
             </li>
           </Link>
@@ -55,7 +51,7 @@ const Navbar = () => {
           {menu.map((item) => (
             <div key={item.id} className="flex items-center justify-between ">
               <FaChevronRight color="gray" />
-              <li className="capitalize duration-100 cursor-pointer  text-end active:scale-105">
+              <li className="capitalize duration-100 cursor-pointer text-end active:scale-105">
                 <Link
                   href={`${item.link == "home" ? "/" : item.link}`}
                   onClick={close}>

@@ -267,10 +267,6 @@ const Contact = () => {
           } `}</button>
         </form>
       </div>
-      <NextPage
-        message="Sometimes I write things related to programming, you can find there. 👉"
-        href="blogs"
-      />
     </section>
   );
 };

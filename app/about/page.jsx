@@ -9,7 +9,7 @@ const About = () => {
       position: "Full Stack Developer",
       type: "Remote",
       company: "Befeni Limited",
-      image: "befeni.png",
+      image: "befeni.jpg",
       duration: "2024 February - Present",
     },
     {
@@ -57,8 +57,8 @@ const About = () => {
         />
         <div className="space-y-5 text-sm font-medium text-center text-gray-900 capitalize md:text-end md:text-lg md:space-y-10">
           <h1>web developer</h1>
-          <h1>book worm</h1>
           <h1>travel enthusiast</h1>
+          <h1>book worm</h1>
         </div>
       </div>
       <div className="mb-20 ">
@@ -68,25 +68,19 @@ const About = () => {
         <div className="space-y-10 ">
           <p className="text-lg font-medium leading-8 text-gray-700">
             Hello! I&apos;m Swam Htet Aung, but you can call me Swam. I&apos;m a
-            web developer from Myanmar and I love making websites that are
+            web developer based in Thailand and I love making websites that are
             user-friendly and innovative.
           </p>
           <p className="text-lg font-medium leading-8 text-gray-700">
-            When I&apos;m not coding, I reading books both fictions and
-            non-fictions and also playing chill games. These hobbies have given
+            When I&apos;m not coding, I read books both fictions and
+            non-fictions and also play video games. These hobbies have given
             me a broad perspective that I bring to all my work.
           </p>
           <p className="text-lg font-medium leading-8 text-gray-700">
             I got into web development in 2017 when I started learning HTML and
             CSS in university. Since then, I&apos;ve learned a lot of different
             technologies like React, Laravel, Angular and more. Right now,
-            I&apos;m working on becoming an expert in both frontend and backend
-            as a whole.
-          </p>
-          <p className="text-lg font-medium leading-8 text-gray-700">
-            I believe that every step, no matter how small, is important on the
-            path to success. I&apos;m proud of what I&apos;ve accomplished so
-            far and I&apos;m excited about what&apos;s next.
+            I&apos;m working on becoming an expert while building a different kind of projects for clients.
           </p>
           <p className="text-lg font-medium leading-8 text-gray-700">
             My goal is to create websites that go above and beyond what clients
@@ -120,6 +114,7 @@ const About = () => {
                       height="50"
                       className="object-cover border rounded-full "
                       alt={work.company}
+                      unoptimized
                     />
                   )}
                 </div>
