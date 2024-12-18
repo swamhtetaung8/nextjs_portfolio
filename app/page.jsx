@@ -1,15 +1,17 @@
-import Hero from "@/components/Hero";
-import NextPage from "@/components/NextPage";
-import Projects from "@/components/Projects";
-import WhatICanDo from "@/components/WhatICanDo";
+import Hero from "@/components/home/Hero";
+import Projects from "@/components/home/Projects";
+import WhatICanDo from "@/components/home/WhatICanDo";
+import Experience from "@/components/home/Experience";
+import Contact from "@/components/home/Contact";
 
 export default function Home() {
   return (
     <>
       <Hero />
       <WhatICanDo />
+      <Experience/>
       <Projects />
-      <NextPage message="Read more about me there. 👉" href="about" />
+      <Contact />
     </>
   );
 }

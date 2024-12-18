@@ -1,7 +1,8 @@
-import Navbar from "@/components/Navbar";
 import "./globals.css";
 import { Poppins } from "next/font/google";
-import Footer from "@/components/Footer";
+import Navbar from "@/components/layout/Navbar";
+import Footer from "@/components/layout/Footer";
+import { Providers } from "./providers";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -11,18 +12,19 @@ const poppins = Poppins({
 export const metadata = {
   title: "Swam Htet Aung",
   description: "Welcome, this is my portfolio website.",
-  icons: { icon: "/favicon.svg" },
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={`${poppins.className} md:px-40`}>
-        <main className="min-h-screen px-5 md:px-20 md:pt-5">
-          <Navbar />
-          {children}
-          <Footer />
-        </main>
+    <html lang="en" suppressHydrationWarning>
+      <body className={`${poppins.className} xl:px-56`}>
+        <Providers>
+          <main className="relative z-10 min-h-screen px-5 md:px-20 md:pt-5">
+            <Navbar />
+            {children}
+            <Footer />
+          </main>
+        </Providers>
       </body>
     </html>
   );
