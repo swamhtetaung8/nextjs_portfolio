@@ -1,5 +1,5 @@
 import NextPage from "@/components/NextPage";
-import Projects from "@/components/Projects";
+import Projects from "@/components/home/Projects";
 import React from "react";
 
 const Works = () => {
