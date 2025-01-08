@@ -1,6 +1,6 @@
 import React from "react";
 import {
-  FaFacebookSquare,
+  FaMedium,
   FaGithubSquare,
   FaLinkedin,
   FaEnvelope,
@@ -42,6 +42,16 @@ const SocialLinks = () => {
       href: "mailto:swamhtetaungg@gmail.com",
       name: "Email"
     },
+    {
+      id: 4,
+      child: (
+        <>
+          <FaMedium size={20} />
+        </>
+      ),
+      href: "https://medium.com/@swamhtetaungg",
+      name: "Medium"
+    },
   ];
   return (
     <div className="flex items-center gap-2">
@@ -49,7 +59,7 @@ const SocialLinks = () => {
         <a
           key={item.id}
           href={item.href}
-          className="p-3 transition-all duration-200 border-[1px] border-gray-300 rounded-full text-black/60 dark:text-gray-300 dark:hover:border-sky-500 dark:hover:text-sky-500 hover:text-sky-500 hover:border-sky-500"
+          className="p-2 md:p-3 transition-all duration-200 border-[1px] border-gray-300 rounded-full text-black/60 dark:text-gray-300 dark:hover:border-sky-500 dark:hover:text-sky-500 hover:text-sky-500 hover:border-sky-500"
           target="_blank"
           rel="noreferrer"
           title={item.name}>

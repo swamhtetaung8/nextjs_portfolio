@@ -25,7 +25,7 @@ const Hero = () => {
             <a
               href="https://drive.google.com/file/d/1Bq52d9vaznoR8l_ArIuMcbU35JRPWumd/view?usp=sharing"
               target="_blank"
-              className="relative px-8 py-3 text-white transition-all duration-700 rounded-full group bg-gradient-to-r from-sky-500 to-blue-500">
+              className="relative px-4 py-2 md:px-8 md:py-3 text-white transition-all duration-700 rounded-full group bg-gradient-to-r from-sky-500 to-blue-500">
               <span className="absolute inset-0 transition-opacity duration-500 rounded-full opacity-0 group-hover:opacity-100 bg-gradient-to-r from-sky-300 to-blue-700"></span>
               <span className="relative z-10">RESUME</span>
             </a>
