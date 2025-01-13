@@ -26,15 +26,7 @@ export default function Experience() {
           "A web developer internship focused on React and Laravel,",
           "Built a full-stack Laravel project from scratch.",
         ],
-      },
-      {
-        company: "KBTC School of Information Technology",
-        role: "Japanese Lecturer",
-        date: "Jul 2022 - Nov 2022",
-        description: [
-          "Taught Japanese N5 and N4 level in both physical and online classes, while developing study plans and preparing lecture materials."
-        ],
-      },
+      }
     ];
   
     return (

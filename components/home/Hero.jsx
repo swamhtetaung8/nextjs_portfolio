@@ -18,12 +18,13 @@ const Hero = () => {
             </h1>
           </div>
           <p className="max-w-xl leading-8 text-gray-600 dark:text-gray-400">     
-            From concept to code, I create websites that are not only visually stunning but also highly functional and user-friendly.
+          From concept to code, I create websites that are both visually stunning and highly functional, ensuring a seamless user experience. <br />
+          Enjoy working with <span className="font-bold text-black">React, Laravel, NodeJs, Vim</span> and writing articles about a variety of topics, particularly documenting my coding journey. <br />
           </p>
 
           <div className="flex items-center gap-2">
             <a
-              href="https://drive.google.com/file/d/1Bq52d9vaznoR8l_ArIuMcbU35JRPWumd/view?usp=sharing"
+              href="https://drive.google.com/file/d/1_LgIgCsd_xQRCel1mwpeIo1Rt7Zix1YO/view?usp=sharing"
               target="_blank"
               className="relative px-4 py-2 md:px-8 md:py-3 text-white transition-all duration-700 rounded-full group bg-gradient-to-r from-sky-500 to-blue-500">
               <span className="absolute inset-0 transition-opacity duration-500 rounded-full opacity-0 group-hover:opacity-100 bg-gradient-to-r from-sky-300 to-blue-700"></span>
