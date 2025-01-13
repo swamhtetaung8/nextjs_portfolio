@@ -43,7 +43,7 @@ const Projects = () => {
           <div
             key={project.id}
             className="block space-y-5 overflow-hidden transition bg-white border-2 border-gray-100 rounded-lg shadow-sm hover:border-sky-500 hover:shadow-lg dark:border-gray-600 dark:hover:shadow-lg dark:hover:shadow-slate-700 dark:bg-transparent dark:hover:border-sky-500">
-            <div className="relative md:h-[260px] h-[180px]">
+            <div className="relative md:h-[310px] lg:h-[300px] h-[180px]">
               <a href={project.demo ?? project.code} target="_blank">
                 <Image
                   src={`/assets/images/projects/${project.img}`}
