@@ -17,7 +17,7 @@ const SocialLinks = () => {
         </>
       ),
       href: "https://github.com/swamhtetaung8?fbclid=IwAR0m0G514Basufv5GAORcMj4tQ9E3oDxhBH3v1Sl7kqfhICTtcxZ15e7qZc",
-      name: "Github"
+      name: "Github",
     },
     {
       id: 2,
@@ -30,7 +30,7 @@ const SocialLinks = () => {
       ),
 
       href: "https://www.linkedin.com/in/swamhtetaung/",
-      name: "LinkedIn"
+      name: "LinkedIn",
     },
     {
       id: 3,
@@ -40,17 +40,7 @@ const SocialLinks = () => {
         </>
       ),
       href: "mailto:swamhtetaungg@gmail.com",
-      name: "Email"
-    },
-    {
-      id: 4,
-      child: (
-        <>
-          <FaMedium size={20} />
-        </>
-      ),
-      href: "https://medium.com/@swamhtetaungg",
-      name: "Medium"
+      name: "Email",
     },
   ];
   return (
@@ -62,10 +52,20 @@ const SocialLinks = () => {
           className="p-2 md:p-3 transition-all duration-200 border-[1px] border-gray-300 rounded-full text-black/60 dark:text-gray-300 dark:hover:border-sky-500 dark:hover:text-sky-500 hover:text-sky-500 hover:border-sky-500"
           target="_blank"
           rel="noreferrer"
-          title={item.name}>
+          title={item.name}
+        >
           {item.child}
         </a>
       ))}
+      <a
+        href="https://medium.com/@swamhtetaungg"
+        className="md:hidden p-2 md:p-3 transition-all duration-200 border-[1px] border-gray-300 rounded-full text-black/60 dark:text-gray-300 dark:hover:border-sky-500 dark:hover:text-sky-500 hover:text-sky-500 hover:border-sky-500"
+        target="_blank"
+        rel="noreferrer"
+        title="medium"
+      >
+        <FaMedium size={20} />
+      </a>
     </div>
   );
 };

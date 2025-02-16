@@ -1,10 +1,7 @@
 "use client";
 
 import React from "react";
-import { GiHamburgerMenu } from "react-icons/gi";
 import { useDisclosure } from "@mantine/hooks";
-import { Modal } from "@mantine/core";
-import { FaChevronRight } from "react-icons/fa";
 import ThemeSwitch from "@/components/ThemeSwitch";
 import { Link } from 'react-scroll';
 
@@ -21,7 +18,12 @@ const Navbar = () => {
     {
       id: 3,
       name: "contact",
-    }
+    },
+    {
+      id: 4,
+      name: "blogs",
+      url: "https://medium.com/@swamhtetaungg"
+    },
   ];
   const [opened, { open, close }] = useDisclosure(false);
   return (
@@ -33,13 +35,23 @@ const Navbar = () => {
       </Link>
       <ul className="items-center hidden gap-10 md:flex">
         {menu.map((item) => {
-          return (
-            <Link to={item.name} key={item.id} smooth duration={500}>
-              <li className={`capitalize transition-all duration-100 cursor-pointer hover:text-sky-400 active:scale-105 relative`}>
-                {item.name}
-              </li>
-            </Link>
-          )
+          if(item.url) {
+            return (
+              <a href={item.url} key={item.id} target="_blank">
+                <li className={`capitalize transition-all duration-100 cursor-pointer hover:text-sky-400 active:scale-105 relative`}>
+                  {item.name}
+                </li>
+              </a>
+            )
+          } else {
+            return (
+              <Link to={item.name} key={item.id} smooth duration={500}>
+                <li className={`capitalize transition-all duration-100 cursor-pointer hover:text-sky-400 active:scale-105 relative`}>
+                  {item.name}
+                </li>
+              </Link>
+            )
+          }
         })}
         <ThemeSwitch/>
       </ul>

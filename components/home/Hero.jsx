@@ -4,7 +4,7 @@ import SocialLinks from "./SocialLinks";
 const Hero = () => {
   return (
     <section className="relative w-full py-10 md:py-20">
-      <div className="relative z-10 flex flex-col justify-between w-full gap-20 md:flex-row">
+      <div className="relative z-10 flex flex-col justify-between w-full gap-20 lg:flex-row">
         <div className="flex flex-col items-start flex-1 gap-8 ">
           <div className="space-y-2">
             <h1 className="heading">
@@ -17,9 +17,8 @@ const Hero = () => {
               Based in Thailand
             </h1>
           </div>
-          <p className="max-w-xl leading-8 text-gray-600 dark:text-gray-400">     
-          From concept to code, I create websites that are both visually stunning and highly functional, ensuring a seamless user experience. <br />
-          Enjoy working with <span className="font-bold text-black">React, Laravel, NodeJs, Vim</span> and writing articles about a variety of topics, particularly documenting my coding journey. <br />
+          <p className="max-w-xl leading-8 text-gray-600 dark:text-gray-400">
+            I specialize in building high performance web applications with React, Laravel, and Node.js, creating seamless and efficient user experiences. Beyond coding, I pursue my passion for content creation on YouTube, where I engage with fellow football fans. This balance keeps me refreshed, allowing me to channel my creativity while staying sharp in tech development.
           </p>
 
           <div className="flex items-center gap-2">
@@ -38,8 +37,8 @@ const Hero = () => {
           <Image
             src="/assets/images/profile.jpg"
             alt=""
-            width={400}
-            height={400}
+            width={450}
+            height={450}
             className="object-cover mx-auto rounded-3xl"
           />
         </div>

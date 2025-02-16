@@ -6,7 +6,7 @@ const WhatICanDo = () => {
     {
       id: 1,
       title: "Frontend Web Design",
-      details: "I have experience building client-side applications with modern features like Single-Page Applications (SPA) and SEO-friendly coding practices. Using latest frontend tools like React, Next.js, TailwindCSS, and TypeScript, I create user-friendly, high-performance apps.",
+      details: "Specialized in building SEO-friendly websites with React, Next.js, TailwindCSS, and TypeScript, ensuring fast, accessible, and high-performance user experiences.",
       techs: [
         "react.svg",
         "nextjs.svg",
@@ -17,8 +17,8 @@ const WhatICanDo = () => {
     },
     {
       id: 2,
-      title: "Backend Development and Web Applications",
-      details: "I love building strong, scalable server applications that manipulate a bunch of data and user loads with ease. Currently I have worked a ton with PHP, Laravel, Node.js, MySQL, and MongoDB.",
+      title: "Backend Development",
+      details: "I can build scalable server applications that efficiently handle high user loads, leveraging PHP, Laravel, Node.js, MySQL, and MongoDB.",
       techs: ["laravel.svg", "php.png", "nodejs.svg", "mysql.svg", "mongodb.svg"],
     },
   ];
