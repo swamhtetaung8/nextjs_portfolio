@@ -5,8 +5,9 @@ export default function Experience() {
         role: "Full Stack Developer",
         date: "Feb 2024 - Present",
         description: [
-          "Collaborate with team members remotely to design and develop web applications for our fashion company, including shirt-selling websites, admin panels, and a production factory application, using various web technologies such as Laravel, Node.js, React, and Vue.js.",
-          "Developed multiple skills for not just as a developer, but as a person to get any difficult task done properly under the guidance of experienced mentors.",
+          "Collaborate with team members remotely to design and develop web applications for a German fashion company. Worked on customized shirt-selling platforms, admin panels for product management, and a production factory application using Laravel, Node.js, React, and Vue.js.",
+          "Contributed to an infrastructure project that enables users to create and manage environments, containers (non-Docker), and project instances via a UI. Gained experience with NixOS and Terraform for infrastructure as code.",
+          "Developed both technical and problem-solving skills under the guidance of experienced mentors, learning to tackle complex challenges efficiently.",
         ],
       },
       {

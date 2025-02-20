@@ -18,7 +18,7 @@ const Hero = () => {
             </h1>
           </div>
           <p className="max-w-xl leading-8 text-gray-600 dark:text-gray-400">
-            I specialize in building high performance web applications with React, Laravel, and Node.js, creating seamless and efficient user experiences. Beyond coding, I pursue my passion for content creation on YouTube, where I engage with fellow football fans. This balance keeps me refreshed, allowing me to channel my creativity while staying sharp in tech development.
+          A fast learning web developer who became proficient in the LAMP stack in last two years. Beyond that, I also have experience with modern frontend technologies like React and NextJs which I genuinely enjoy working with. In my leisure time, I pursue my passion for content creation on YouTube, where I engage with fellow football fans. This balance keeps me refreshed, allowing me to channel my creativity while staying sharp in tech development.
           </p>
 
           <div className="flex items-center gap-2">
