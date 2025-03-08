@@ -31,7 +31,7 @@ const WhatICanDo = () => {
         {services.map((service) => (
           <article
             key={service.id}
-            className="flex flex-col justify-between flex-1 p-4 space-y-5 transition-all duration-300 bg-white border-2 border-gray-200 rounded-lg shadow-sm dark:border-gray-600 dark:hover:shadow-lg dark:hover:shadow-slate-700 dark:bg-transparent hover:shadow-xl dark:hover:border-sky-500 hover:border-sky-500 sm:p-6">
+            className="flex flex-col justify-between flex-1 p-4 space-y-5 transition-all duration-300 bg-white/50 border-2 border-gray-200 rounded-lg shadow-sm dark:border-gray-600 dark:hover:shadow-lg dark:hover:shadow-slate-700 dark:bg-transparent hover:shadow-xl dark:hover:border-sky-500 hover:border-sky-500 sm:p-6">
             <div>
               <h3 className="mt-0.5 text-2xl font-medium text-gray-900 dark:text-slate-100">
                 {service.title}

@@ -1,38 +1,156 @@
+"use client";
+
 import Image from "next/image";
-import React from "react";
-import { FaGithub } from "react-icons/fa";
+import React, { useState, useEffect } from "react";
+import { IoClose } from "react-icons/io5";
+import { motion, AnimatePresence } from "framer-motion";
+
 const Projects = () => {
+  const [selectedProject, setSelectedProject] = useState(null);
+
+  // Prevent background scrolling when modal is open
+  useEffect(() => {
+    if (selectedProject) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [selectedProject]);
+
   const projects = [
     {
       id: 1,
-      code: "https://github.com/swamhtetaung8/employee-registration-system",
       title: "Employee Registration System",
-      desc: "A fullstack laravel application that mananges your employees' informations.",
-      img: "ers.png",
+      desc: "A fullstack Laravel application that manages your employees' information.",
+      img: "ers/thumbnail.png",
+      images: [
+        { src: "ers/ers-1.png", caption: "Login Page" },
+        { src: "ers/ers-2.png", caption: "Register Page (Normal Register)" },
+        { src: "ers/ers-3.png", caption: "Register Page (Excel Register)" },
+        {
+          src: "ers/ers-4.png",
+          caption: "Employee List Page",
+        },
+        {
+          src: "ers/ers-5.png",
+          caption: "Employee Detail Page",
+        },
+        { src: "ers/ers-6.png", caption: "Edit Employee Page" },
+        {
+          src: "ers/ers-7.png",
+          caption: "Employee List Page (Not Found state)",
+        },
+        { src: "ers/ers-8.png", caption: "Supports Multiple Language" },
+        {
+          src: "ers/ers-9.png",
+          caption: "Register Page (Validation Error Page)",
+        },
+      ],
+      techStacks: ["Laravel", "Bootstrap", "MySQL"],
     },
     {
       id: 2,
-      demo: "https://simpuru-ecommerce.vercel.app/",
       title: "Simpuru",
-      desc: "A mini shopping cart management project that was built with React and Redux toolkit.",
-      img: "simpuru.png",
+      desc: "A mini shopping cart management project built with React and Redux Toolkit.",
+      img: "simpuru/thumbnail.png",
+      url: "https://simpuru-ecommerce.vercel.app",
+      images: [
+        { src: "simpuru/simpuru-1.png", caption: "Hero Section" },
+        { src: "simpuru/simpuru-2.png", caption: "Products Section" },
+        { src: "simpuru/simpuru-3.png", caption: "Product Detail Page" },
+        {
+          src: "simpuru/simpuru-4.png",
+          caption: "Product Detail Page (Added to cart)",
+        },
+        {
+          src: "simpuru/simpuru-5.png",
+          caption: "Products Section (Added to cart)",
+        },
+        { src: "simpuru/simpuru-6.png", caption: "Cart Page" },
+        { src: "simpuru/simpuru-7.png", caption: "Cart Page Interactions" },
+        { src: "simpuru/simpuru-8.png", caption: "Cart Page (Checkout state)" },
+      ],
+      techStacks: ["React", "Redux Toolkit", "Fake Store API", "Tailwind CSS"],
     },
     {
       id: 3,
-      demo: "https://is-ness.love",
       title: "is ness",
-      desc: "A sleek, user-friendly website for is~ness, a brand dedicated to creating natural body care products for babies built with NextJs.",
-      img: "isness.png",
+      desc: "A sleek, user-friendly website for is~ness, a brand dedicated to creating natural body care products for babies built with Next.js.",
+      img: "isness/thumbnail.png",
+      url: "https://is-ness.love",
+      images: [
+        { src: "isness/isness-1.png", caption: "Hero Section" },
+        { src: "isness/isness-2.png", caption: "More Information Section" },
+        { src: "isness/isness-3.png", caption: "Ingredients Section" },
+        {
+          src: "isness/isness-4.png",
+          caption: "Delivery Process Section",
+        },
+        {
+          src: "isness/isness-5.png",
+          caption: "Pricing Section",
+        },
+        { src: "isness/isness-6.png" },
+        { src: "isness/isness-7.png", caption: "Footer" },
+      ],
+      techStacks: ["NextJs", "Mantine", "Tailwind CSS"],
     },
     {
       id: 4,
-      code: "https://github.com/swamhtetaung8/themealdb-practice-react",
-      demo: "https://the-meal-recipe.vercel.app/",
-      title: "Food Recipe website",
-      desc: "A food recipe website with React and themealdb API. A project I did when I was learning React and working with APIs.",
-      img: "recipe.png",
+      title: "Food Recipe Website",
+      desc: "A food recipe website with React and the MealDB API.",
+      img: "recipe/thumbnail.png",
+      url: "https://the-meal-recipe.vercel.app",
+      images: [
+        { src: "recipe/recipe-1.png", caption: "Hero Section" },
+        { src: "recipe/recipe-2.png", caption: "Recipe List (Default - Chicken)" },
+        { src: "recipe/recipe-3.png", caption: "Recipe Detail Page (Instruction Tab)" },
+        {
+          src: "recipe/recipe-4.png",
+          caption: "Recipe Detail Page (Ingredients Tab)" 
+        },
+      ],
+      techStacks: ["React", "The mealdb API", "Tailwind CSS"],
+    },
+    {
+      id: 5,
+      title: "Netflix Clone",
+      desc: "Practice project to clone Netflix's homepage with React and Firebase for authentication.",
+      img: "netflix-clone/thumbnail.png",
+      url: "https://movie-sha.vercel.app",
+      images: [
+        { src: "netflix-clone/netflix-1.png", caption: "Movie Listing Page (Hero Section)" },
+        { src: "netflix-clone/netflix-2.png", caption: "Movie Listing Page (More Movies)" },
+        { src: "netflix-clone/netflix-3.png", caption: "Personal page to browse favorite shows" },
+        {
+          src: "netflix-clone/netflix-4.png",
+          caption: "Sign Up Page" 
+        },
+      ],
+      techStacks: ["React", "Firebase", "Tailwind CSS", "TMDB(The movie database) API"],
+    },
+    {
+      id: 6,
+      title: "Image Generator App",
+      desc: "A simple image generator app built with React and Unsplash API.",
+      img: "unsplash-img-generator/thumbnail.png",
+      url: "https://unsplash-img-generator.vercel.app",
+      images: [
+        { src: "unsplash-img-generator/img-1.png", caption: "Hero Section" },
+        { src: "unsplash-img-generator/img-2.png", caption: "Image List (Default - Mountains)" },
+        { src: "unsplash-img-generator/img-3.png", caption: "Image List (Search Result)" },
+        {
+          src: "unsplash-img-generator/img-4.png",
+          caption: "Image List (Not Found state)" 
+        },
+      ],
+      techStacks: ["React", "Unsplash API", "Tailwind CSS"],
     },
   ];
+
   return (
     <section id="projects" className="w-full min-h-screen py-10">
       <h1 className="inline-block pb-3 mb-10 border-b-4 heading border-sky-500">
@@ -42,52 +160,112 @@ const Projects = () => {
         {projects.map((project) => (
           <div
             key={project.id}
-            className="block space-y-5 overflow-hidden transition bg-white border-2 border-gray-100 rounded-lg shadow-sm hover:border-sky-500 hover:shadow-lg dark:border-gray-600 dark:hover:shadow-lg dark:hover:shadow-slate-700 dark:bg-transparent dark:hover:border-sky-500">
+            onClick={() => setSelectedProject(project)}
+            className="block cursor-pointer space-y-5 overflow-hidden transition bg-white/50 border-2 border-gray-100 rounded-lg shadow-sm hover:border-sky-500 hover:shadow-lg dark:border-gray-600 dark:hover:shadow-lg dark:hover:shadow-slate-700 dark:bg-transparent dark:hover:border-sky-500"
+          >
             <div className="relative md:h-[310px] lg:h-[300px] h-[180px]">
-              <a href={project.demo ?? project.code} target="_blank">
-                <Image
-                  src={`/assets/images/projects/${project.img}`}
-                  className="object-cover object-top"
-                  alt={project.img}
-                  fill
-                />
-              </a>
+              <Image
+                src={`/assets/images/projects/${project.img}`}
+                className="object-cover object-top"
+                alt={project.img}
+                fill
+              />
             </div>
             <div className="p-4 pt-0">
-              <h3 className="mt-0.5 text-2xl font-medium  text-gray-800 dark:text-slate-200">
+              <h3 className="mt-0.5 text-2xl font-medium text-gray-800 dark:text-slate-200">
                 {project.title}
               </h3>
               <p className="mt-2 text-sm leading-8 text-gray-600 dark:text-gray-400 md:text-base">
                 {project.desc}
               </p>
-              <div className="flex items-center justify-between">
-                {project.demo && (
-                  <a
-                    href={project.demo}
-                    target="_blank"
-                    className="inline-flex items-center gap-1 mt-4 font-medium group text-sky-500">
-                    Live Demo
-                    <span
-                      aria-hidden="true"
-                      className="block transition-all group-hover:ms-0.5 rtl:rotate-180">
-                      &rarr;
-                    </span>
-                  </a>
-                )}
-                {project.code && (
-                  <a
-                    href={project.code}
-                    target="_blank"
-                    className="inline-flex items-center gap-1 mt-4 font-medium group text-sky-500">
-                    Source code
-                    <FaGithub />
-                  </a>
-                )}
-              </div>
             </div>
           </div>
         ))}
       </div>
+
+      {/* Modal */}
+      <AnimatePresence>
+        {selectedProject && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-60 z-50"
+            onClick={() => setSelectedProject(null)} // Close modal when clicking backdrop
+          >
+            <motion.div
+              initial={{ y: 50, opacity: 0, scale: 0.9 }}
+              animate={{ y: 0, opacity: 1, scale: 1 }}
+              exit={{ y: 50, opacity: 0, scale: 0.9 }}
+              transition={{ duration: 0.3, ease: "easeInOut" }}
+              className="relative bg-white dark:bg-gray-900 rounded-lg p-6 max-w-4xl w-full max-h-[80vh] overflow-y-auto shadow-xl"
+              onClick={(e) => e.stopPropagation()} // Prevent modal from closing when clicking inside
+            >
+              <button
+                onClick={() => setSelectedProject(null)}
+                className="absolute top-3 right-3 text-gray-500 hover:text-gray-800 dark:hover:text-gray-300"
+              >
+                <IoClose size={28} />
+              </button>
+              <h2 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 mb-4">
+                {selectedProject.title}
+              </h2>
+              <p className="text-gray-600 dark:text-gray-400 mb-2 space-x-2">
+                <span>{selectedProject.desc}</span>
+                {selectedProject.url && (
+                  <span>
+                    <a
+                      href={selectedProject.url}
+                      target="_blank"
+                      className="text-sky-500 hover:underline"
+                    >
+                      Visit Site
+                    </a>
+                  </span>
+                )}
+              </p>
+
+              {selectedProject.techStacks &&
+                selectedProject.techStacks.length > 0 && (
+                  <div className="mt-4">
+                    <h3 className="text-lg font-medium text-gray-800 dark:text-gray-200">
+                      Tech Stack
+                    </h3>
+                    <ul className="mt-2 space-x-2 space-y-2">
+                      {selectedProject.techStacks.map((tech, index) => (
+                        <li
+                          key={index}
+                          className="inline-block text-sm bg-sky-500 rounded-full text-white p-1 px-3 hover:bg-sky-600 transition-all duration-300"
+                        >
+                          {tech}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+
+              {/* Image Carousel */}
+              <div className="grid grid-cols-1 divide-y-[1px] divide-black/50">
+                {selectedProject.images.map((img, index) => (
+                  <div className="pb-4" key={index}>
+                    <div className="relative w-full my-5 h-96">
+                      <Image
+                        src={`/assets/images/projects/${img.src}`}
+                        alt={img.src}
+                        fill
+                        className="object-contain"
+                      />
+                    </div>
+                    <p className="text-sm mt-2 text-gray-600 dark:text-gray-400 text-center">
+                      {img.caption}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </section>
   );
 };

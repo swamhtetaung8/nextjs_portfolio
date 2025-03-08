@@ -3,7 +3,7 @@ import React from "react";
 import SocialLinks from "./SocialLinks";
 const Hero = () => {
   return (
-    <section className="relative w-full py-10 md:py-20">
+    <section className="relative w-full py-10">
       <div className="relative z-10 flex flex-col justify-between w-full gap-20 lg:flex-row">
         <div className="flex flex-col items-start flex-1 gap-8 ">
           <div className="space-y-2">
@@ -23,7 +23,7 @@ const Hero = () => {
 
           <div className="flex items-center gap-2">
             <a
-              href="https://drive.google.com/file/d/1ayzLWNEssJ7hL8OUpRraUByg5JmvrwMY/view?usp=sharing"
+              href="https://drive.google.com/file/d/1yL6dbETlVE-1MZVx2RrK9ovamegzNhPm/view?usp=sharing"
               target="_blank"
               className="relative px-4 py-2 md:px-8 md:py-3 text-white transition-all duration-700 rounded-full group bg-gradient-to-r from-sky-500 to-blue-500">
               <span className="absolute inset-0 transition-opacity duration-500 rounded-full opacity-0 group-hover:opacity-100 bg-gradient-to-r from-sky-300 to-blue-700"></span>
