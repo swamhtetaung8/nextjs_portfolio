@@ -6,19 +6,18 @@ const WhatICanDo = () => {
     {
       id: 1,
       title: "Frontend Web Design",
-      details: "Specialized in building SEO-friendly websites with React, Next.js, TailwindCSS, and TypeScript, ensuring fast, accessible, and high-performance user experiences.",
+      details: "I can build different type of user interfaces both for the web and mobile applications, using modern technologies like React, Next.js, Tailwind CSS, and TypeScript.",
       techs: [
         "react.svg",
         "nextjs.svg",
         "tailwind.svg",
-        "typescript.svg",
-        "js.png"
+        "typescript.svg"
       ],
     },
     {
       id: 2,
       title: "Backend Development",
-      details: "I can build scalable server applications that efficiently handle high user loads, leveraging PHP, Laravel, Node.js, MySQL, and MongoDB.",
+      details: "I build secure, efficient RESTful APIs and web applications using PHP (Laravel) and occasionally Node.js from including deployment on servers. I typically deploy on DigitalOcean and have experience with MySQL and MongoDB databases.",
       techs: ["laravel.svg", "php.png", "nodejs.svg", "mysql.svg", "mongodb.svg"],
     },
   ];
