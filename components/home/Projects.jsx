@@ -23,9 +23,29 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
+      title: "CS:GO Match Analyzer",
+      desc: "A web-based tool that converts raw CS:GO match logs into detailed, user-friendly match analytics and visualizations.",
+      img: "csgo-match-analyzer/thumbnail-1.png",
+      github: "https://github.com/swamhtetaung8/csgo-match-analyzer",
+      images: [
+        {
+          src: "csgo-match-analyzer/thumbnail-1.png",
+          caption: "Easily parse server logs to insightful dashboard.",
+        },
+        {
+          src: "csgo-match-analyzer/thumbnail-2.png",
+          caption:
+            "Visualize match events, player statistics and detailed round-by-round breakdowns",
+        },
+      ],
+      techStacks: ["Laravel", "InertiaJs", "ReactJs", "Tailwind CSS"],
+    },
+    {
+      id: 2,
       title: "Employee Registration System",
       desc: "A fullstack Laravel application that manages your employees' information.",
       img: "ers/thumbnail.png",
+      github: "https://github.com/swamhtetaung8/employee-management-system",
       images: [
         { src: "ers/ers-1.png", caption: "Login Page" },
         { src: "ers/ers-2.png", caption: "Register Page (Normal Register)" },
@@ -52,7 +72,7 @@ const Projects = () => {
       techStacks: ["Laravel", "Bootstrap", "MySQL"],
     },
     {
-      id: 2,
+      id: 3,
       title: "Simpuru",
       desc: "A mini shopping cart management project built with React and Redux Toolkit.",
       img: "simpuru/thumbnail.png",
@@ -76,11 +96,12 @@ const Projects = () => {
       techStacks: ["React", "Redux Toolkit", "Fake Store API", "Tailwind CSS"],
     },
     {
-      id: 3,
+      id: 4,
       title: "is ness",
       desc: "A sleek, user-friendly website for is~ness, a brand dedicated to creating natural body care products for babies built with Next.js.",
       img: "isness/thumbnail.png",
       url: "https://is-ness.love",
+      github: "https://github.com/swamhtetaung8/is-ness",
       images: [
         { src: "isness/isness-1.png", caption: "Hero Section" },
         { src: "isness/isness-2.png", caption: "More Information Section" },
@@ -99,38 +120,35 @@ const Projects = () => {
       techStacks: ["NextJs", "Mantine", "Tailwind CSS"],
     },
     {
-      id: 4,
-      title: "Food Recipe Website",
-      desc: "A food recipe website with React and the MealDB API.",
-      img: "recipe/thumbnail.png",
-      url: "https://the-meal-recipe.vercel.app",
-      images: [
-        { src: "recipe/recipe-1.png", caption: "Hero Section" },
-        { src: "recipe/recipe-2.png", caption: "Recipe List (Default - Chicken)" },
-        { src: "recipe/recipe-3.png", caption: "Recipe Detail Page (Instruction Tab)" },
-        {
-          src: "recipe/recipe-4.png",
-          caption: "Recipe Detail Page (Ingredients Tab)" 
-        },
-      ],
-      techStacks: ["React", "The mealdb API", "Tailwind CSS"],
-    },
-    {
       id: 5,
       title: "Netflix Clone",
       desc: "Practice project to clone Netflix's homepage with React and Firebase for authentication.",
       img: "netflix-clone/thumbnail.png",
       url: "https://movie-sha.vercel.app",
       images: [
-        { src: "netflix-clone/netflix-1.png", caption: "Movie Listing Page (Hero Section)" },
-        { src: "netflix-clone/netflix-2.png", caption: "Movie Listing Page (More Movies)" },
-        { src: "netflix-clone/netflix-3.png", caption: "Personal page to browse favorite shows" },
+        {
+          src: "netflix-clone/netflix-1.png",
+          caption: "Movie Listing Page (Hero Section)",
+        },
+        {
+          src: "netflix-clone/netflix-2.png",
+          caption: "Movie Listing Page (More Movies)",
+        },
+        {
+          src: "netflix-clone/netflix-3.png",
+          caption: "Personal page to browse favorite shows",
+        },
         {
           src: "netflix-clone/netflix-4.png",
-          caption: "Sign Up Page" 
+          caption: "Sign Up Page",
         },
       ],
-      techStacks: ["React", "Firebase", "Tailwind CSS", "TMDB(The movie database) API"],
+      techStacks: [
+        "React",
+        "Firebase",
+        "Tailwind CSS",
+        "TMDB(The movie database) API",
+      ],
     },
     {
       id: 6,
@@ -140,11 +158,17 @@ const Projects = () => {
       url: "https://unsplash-img-generator.vercel.app",
       images: [
         { src: "unsplash-img-generator/img-1.png", caption: "Hero Section" },
-        { src: "unsplash-img-generator/img-2.png", caption: "Image List (Default - Mountains)" },
-        { src: "unsplash-img-generator/img-3.png", caption: "Image List (Search Result)" },
+        {
+          src: "unsplash-img-generator/img-2.png",
+          caption: "Image List (Default - Mountains)",
+        },
+        {
+          src: "unsplash-img-generator/img-3.png",
+          caption: "Image List (Search Result)",
+        },
         {
           src: "unsplash-img-generator/img-4.png",
-          caption: "Image List (Not Found state)" 
+          caption: "Image List (Not Found state)",
         },
       ],
       techStacks: ["React", "Unsplash API", "Tailwind CSS"],
@@ -212,8 +236,11 @@ const Projects = () => {
               </h2>
               <p className="text-gray-600 dark:text-gray-400 mb-2 space-x-2">
                 <span>{selectedProject.desc}</span>
+              </p>
+
+              <div className="space-x-2">
                 {selectedProject.url && (
-                  <span>
+                  <span className="border-r-2 border-gray-600 pr-2">
                     <a
                       href={selectedProject.url}
                       target="_blank"
@@ -223,7 +250,19 @@ const Projects = () => {
                     </a>
                   </span>
                 )}
-              </p>
+
+                {selectedProject.github && (
+                  <span>
+                    <a
+                      href={selectedProject.github}
+                      target="_blank"
+                      className="text-sky-500 hover:underline"
+                    >
+                      Github
+                    </a>
+                  </span>
+                )}
+              </div>
 
               {selectedProject.techStacks &&
                 selectedProject.techStacks.length > 0 && (
