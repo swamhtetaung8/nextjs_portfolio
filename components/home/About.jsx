@@ -18,11 +18,11 @@ const About = () => {
                 whoami
               </h2>
               <p className="leading-8 text-gray-600 dark:text-gray-400">
-                I'm Swam Htet Aung, but you can call me Swam. I’m a{" "}
+                I&apos;m Swam Htet Aung, but you can call me Swam. I&apos;m a{" "}
                 <strong>24 years old full-stack developer</strong> from Myanmar,
                 currently living and working in Thailand. I studied Computer
                 Science for three years, but had to pause and leave the country
-                due to the military coup (it wasn’t easy). I’m now continuing my
+                due to the military coup (it wasn&apos;t easy). I&apos;m now continuing my
                 studies online at the University of the People while working
                 full-time as a developer.
               </p>
@@ -43,7 +43,7 @@ const About = () => {
                 how different tech devices work. I began my dev career with <strong>PHP
                 & Laravel</strong>, and eventually got into frontend frameworks like{" "}
                 <strong>React</strong> (my favorite), <strong>Vue</strong>, and{" "}
-                <strong>Angular</strong>. I’m also comfortable with server
+                <strong>Angular</strong>. I&apos;m also comfortable with server
                 setups, Linux administration, and managing deployments. I take
                 ownership of what I build and care deeply about clean, scalable
                 code. I enjoy hybrid work setups, collaborative
