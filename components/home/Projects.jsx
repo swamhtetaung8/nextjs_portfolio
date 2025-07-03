@@ -23,27 +23,8 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "CS:GO Match Analyzer",
-      desc: "A web-based tool that converts raw CS:GO match logs into detailed, user-friendly match analytics and visualizations.",
-      img: "csgo-match-analyzer/thumbnail-1.png",
-      github: "https://github.com/swamhtetaung8/csgo-match-analyzer",
-      images: [
-        {
-          src: "csgo-match-analyzer/thumbnail-1.png",
-          caption: "Easily parse server logs to insightful dashboard.",
-        },
-        {
-          src: "csgo-match-analyzer/thumbnail-2.png",
-          caption:
-            "Visualize match events, player statistics and detailed round-by-round breakdowns",
-        },
-      ],
-      techStacks: ["Laravel", "InertiaJs", "ReactJs", "Tailwind CSS"],
-    },
-    {
-      id: 2,
       title: "Employee Registration System",
-      desc: "A fullstack Laravel application that manages your employees' information.",
+      desc: "A fullstack Laravel application that manages employee data.",
       img: "ers/thumbnail.png",
       github: "https://github.com/swamhtetaung8/employee-management-system",
       images: [
@@ -72,33 +53,9 @@ const Projects = () => {
       techStacks: ["Laravel", "Bootstrap", "MySQL"],
     },
     {
-      id: 3,
-      title: "Simpuru",
-      desc: "A mini shopping cart management project built with React and Redux Toolkit.",
-      img: "simpuru/thumbnail.png",
-      url: "https://simpuru-ecommerce.vercel.app",
-      images: [
-        { src: "simpuru/simpuru-1.png", caption: "Hero Section" },
-        { src: "simpuru/simpuru-2.png", caption: "Products Section" },
-        { src: "simpuru/simpuru-3.png", caption: "Product Detail Page" },
-        {
-          src: "simpuru/simpuru-4.png",
-          caption: "Product Detail Page (Added to cart)",
-        },
-        {
-          src: "simpuru/simpuru-5.png",
-          caption: "Products Section (Added to cart)",
-        },
-        { src: "simpuru/simpuru-6.png", caption: "Cart Page" },
-        { src: "simpuru/simpuru-7.png", caption: "Cart Page Interactions" },
-        { src: "simpuru/simpuru-8.png", caption: "Cart Page (Checkout state)" },
-      ],
-      techStacks: ["React", "Redux Toolkit", "Fake Store API", "Tailwind CSS"],
-    },
-    {
-      id: 4,
+      id: 2,
       title: "is ness",
-      desc: "A sleek, user-friendly website for is~ness, a brand dedicated to creating natural body care products for babies built with Next.js.",
+      desc: "A sleek, user-friendly website for is~ness, a brand dedicated to creating natural body care products for new borns.",
       img: "isness/thumbnail.png",
       url: "https://is-ness.love",
       github: "https://github.com/swamhtetaung8/is-ness",
@@ -120,58 +77,47 @@ const Projects = () => {
       techStacks: ["NextJs", "Mantine", "Tailwind CSS"],
     },
     {
-      id: 5,
-      title: "Netflix Clone",
-      desc: "Practice project to clone Netflix's homepage with React and Firebase for authentication.",
-      img: "netflix-clone/thumbnail.png",
-      url: "https://movie-sha.vercel.app",
+      id: 3,
+      title: "CS:GO Match Analyzer",
+      desc: "A web-based tool that converts raw CS:GO match logs into detailed, user-friendly match analytics and visualizations.",
+      img: "csgo-match-analyzer/thumbnail-1.png",
+      github: "https://github.com/swamhtetaung8/csgo-match-analyzer",
       images: [
         {
-          src: "netflix-clone/netflix-1.png",
-          caption: "Movie Listing Page (Hero Section)",
+          src: "csgo-match-analyzer/thumbnail-1.png",
+          caption: "Easily parse server logs to insightful dashboard.",
         },
         {
-          src: "netflix-clone/netflix-2.png",
-          caption: "Movie Listing Page (More Movies)",
-        },
-        {
-          src: "netflix-clone/netflix-3.png",
-          caption: "Personal page to browse favorite shows",
-        },
-        {
-          src: "netflix-clone/netflix-4.png",
-          caption: "Sign Up Page",
+          src: "csgo-match-analyzer/thumbnail-2.png",
+          caption:
+            "Visualize match events, player statistics and detailed round-by-round breakdowns",
         },
       ],
-      techStacks: [
-        "React",
-        "Firebase",
-        "Tailwind CSS",
-        "TMDB(The movie database) API",
-      ],
+      techStacks: ["Laravel", "InertiaJs", "ReactJs", "Tailwind CSS"],
     },
     {
-      id: 6,
-      title: "Image Generator App",
-      desc: "A simple image generator app built with React and Unsplash API.",
-      img: "unsplash-img-generator/thumbnail.png",
-      url: "https://unsplash-img-generator.vercel.app",
+      id: 4,
+      title: "Simpuru",
+      desc: "A mini ecommerce store featuring a product catalog, cart functionality, and checkout process.",
+      img: "simpuru/thumbnail.png",
+      url: "https://simpuru-ecommerce.vercel.app",
       images: [
-        { src: "unsplash-img-generator/img-1.png", caption: "Hero Section" },
+        { src: "simpuru/simpuru-1.png", caption: "Hero Section" },
+        { src: "simpuru/simpuru-2.png", caption: "Products Section" },
+        { src: "simpuru/simpuru-3.png", caption: "Product Detail Page" },
         {
-          src: "unsplash-img-generator/img-2.png",
-          caption: "Image List (Default - Mountains)",
+          src: "simpuru/simpuru-4.png",
+          caption: "Product Detail Page (Added to cart)",
         },
         {
-          src: "unsplash-img-generator/img-3.png",
-          caption: "Image List (Search Result)",
+          src: "simpuru/simpuru-5.png",
+          caption: "Products Section (Added to cart)",
         },
-        {
-          src: "unsplash-img-generator/img-4.png",
-          caption: "Image List (Not Found state)",
-        },
+        { src: "simpuru/simpuru-6.png", caption: "Cart Page" },
+        { src: "simpuru/simpuru-7.png", caption: "Cart Page Interactions" },
+        { src: "simpuru/simpuru-8.png", caption: "Cart Page (Checkout state)" },
       ],
-      techStacks: ["React", "Unsplash API", "Tailwind CSS"],
+      techStacks: ["React", "Redux Toolkit", "Fake Store API", "Tailwind CSS"],
     },
   ];
 
