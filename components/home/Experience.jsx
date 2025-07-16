@@ -7,9 +7,13 @@ export default function Experience() {
       role: "Full Stack Developer",
       date: "Feb 2024 - Present",
       description: [
-        "Currently working as a full stack developer at Befeni Thailand, focusing on building and maintaining web applications related to ecommerce shop that sells custom shirts for customers in Central Europe and a production warehouse application to track shirt production steps using React, Vue.js, PHP and Laravel. Also gained DevOps experience by participating in developing an infrastructure management automation platform which enables environment creation, project deployment and replication with just one click using Terraform (AWS), Packer, and NixOS.",
-        "Maintaining and modernizing existing legacy PHP codebases while also developing new features using modern frameworks to enhance user experience and functionality. Involved in frontend, backend, and also server setups and deployments.",
-        "Actively participating in code reviews, team meetings, and project planning sessions to enhance collaboration and project outcomes. Learned a lot about Agile/Scrum methodologies and best practices to approach any problems/planning in software development.",
+        "Developed and maintained B2B/B2C e-commerce features using PHP (Laravel), React, Vue, and TailwindCSS for Central European clients.",
+        "Contributed to an infrastructure management tool using AdonisJS, React, Terraform (AWS), NixOS, and Packer.",
+        "Built custom Discord bot commands with Node.js to automate internal tasks for non-technical staff.",
+        "Refactored legacy PHP code into clean, object-oriented structures for better maintainability.",
+        "Integrated n8n to automate post-deployment workflows.",
+        "Set up centralized monitoring with Grafana and Prometheus for primary web servers.",
+        "Performed manual Linux server setups including hardening, automation, and tool installations."
       ],
       url: "https://www.befeni.de/",
       logo: "/assets/images/works/befeni.jpg",

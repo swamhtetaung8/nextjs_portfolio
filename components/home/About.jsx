@@ -18,7 +18,7 @@ const About = () => {
                 whoami
               </h2>
               <p className="leading-8 text-gray-600 dark:text-gray-400">
-                I&apos;m Swam Htet Aung, but you can call me Swam. I&apos;m a{" "}
+                I&apos;m Swam Htet Aung, a{" "}
                 <strong>24 years old full-stack developer</strong> from Myanmar,
                 currently living and working in Thailand. I studied Computer
                 Science for three years, but had to pause and leave the country

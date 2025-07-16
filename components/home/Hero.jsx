@@ -10,8 +10,8 @@ const Hero = () => {
       <div className="relative z-10 flex flex-col justify-between w-full gap-20 lg:flex-row">
         <div className="flex flex-col items-start flex-1 gap-8 ">
           <div className="space-y-2">
-            <h1 className="subheading">Hi! 👋 I&apos;m Swam</h1>
-            <h1 className="subheading">Full Stack Developer</h1>
+            <h1 className="heading">Hi! 👋 I&apos;m Swam</h1>
+            <h1 className="heading">Full Stack Developer</h1>
           </div>
           <p className="lg:max-w-xl leading-8 text-gray-600 dark:text-gray-400">
             Based in Bangkok (Thailand), boasting over 2+ years of hands-on experience in web development. I love building applications deeply focused on simplicity, user experience, security and performance.

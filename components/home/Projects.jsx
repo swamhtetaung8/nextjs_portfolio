@@ -131,7 +131,7 @@ const Projects = () => {
           <div
             key={project.id}
             onClick={() => setSelectedProject(project)}
-            className="block cursor-pointer space-y-5 overflow-hidden transition bg-white/50 border-2 border-gray-100 rounded-lg shadow-sm hover:border-sky-500 hover:shadow-lg dark:border-gray-600 dark:hover:shadow-lg dark:hover:shadow-slate-700 dark:bg-transparent dark:hover:border-sky-500"
+            className="block cursor-pointer space-y-5 overflow-hidden transition-all duration-300 border-2 rounded-2xl shadow-md bg-white/60 backdrop-blur-md border-gray-200 hover:border-sky-500 hover:shadow-xl dark:bg-slate-900/60 dark:border-gray-700 dark:hover:border-sky-400 dark:hover:shadow-sky-700/30 group"
           >
             <div className="relative md:h-[310px] lg:h-[300px] h-[180px]">
               <Image
@@ -142,7 +142,7 @@ const Projects = () => {
               />
             </div>
             <div className="p-4 pt-0">
-              <h3 className="mt-0.5 text-2xl font-medium text-gray-800 dark:text-slate-200">
+              <h3 className="mt-0.5 text-2xl font-medium group-hover:text-sky-500 dark:group-hover:text-sky-400 transition-colors duration-200">
                 {project.title}
               </h3>
               <p className="mt-2 text-sm leading-8 text-gray-600 dark:text-gray-400 md:text-base">
