@@ -67,7 +67,7 @@ const WhatICanDo = () => {
       </h1>
 
       <TooltipProvider>
-        <div className="grid grid-cols-2 gap-8 xl:flex-row">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 xl:flex-row">
           {services.map((service) => (
             <article
               key={service.id}
