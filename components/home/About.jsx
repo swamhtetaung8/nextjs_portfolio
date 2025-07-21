@@ -62,7 +62,7 @@ const About = () => {
                 Life Outside Work
               </h2>
               <p className="leading-8 text-gray-600 dark:text-gray-400">
-                I focus a lot on <strong>work-life balance</strong> and believe that a life outside of work is more important. So you will find me playing video games, watching anime and spending quality time with my family and friends in my leisure time. I also love to travel and my goal is to explore and settle in Europe in the next few years.
+                I focus a lot on <strong>work-life balance</strong> and believe that life outside work to balance the mental demands of development is important. So you will find me playing video games, watching anime and spending quality time with my family and friends in my leisure time. I also love to travel and my goal is to explore and settle in Europe in the next few years.
               </p>
             </div>
           </div>

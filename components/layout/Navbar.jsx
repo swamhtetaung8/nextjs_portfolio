@@ -25,7 +25,7 @@ const Navbar = () => {
     },
     {
       id: 5,
-      name: "blogs",
+      name: "blog",
       url: "https://medium.com/@swamhtetaungg",
     },
   ];
